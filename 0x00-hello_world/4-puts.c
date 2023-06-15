@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main -Entry point
- * 
- * retunr always (0) success
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
