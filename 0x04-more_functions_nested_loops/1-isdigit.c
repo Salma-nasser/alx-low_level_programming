@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - entry point
- *
+ *@c: char to check
  * check if the entry is a digit or not
  *
  * Return: 0 or 1

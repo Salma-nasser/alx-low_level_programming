@@ -2,7 +2,6 @@
 
 /**
  * mul - entry point
- *
  * @a: first int
  * @b: second int
  *
