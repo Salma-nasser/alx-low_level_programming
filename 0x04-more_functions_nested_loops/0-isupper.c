@@ -2,7 +2,7 @@
 
 /**
  *_isupper - entry point
- *
+ *@c: char to check
  *check if the input is an upper case or not
  *
  * Return: 1 if uppercase 0 if lowercase
