@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * mul - entry point
- * @a: first int
- * @b: second int
+ *mul - entry point
+ *@a: first int
+ *@b: second int
  *
- * Return : a*b
+ *Return : a*b
  */
 int mul(int a, int b)
 {
