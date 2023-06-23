@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
- *mul - entry point
- *@a: first int
- *@b: second int
- *
- *Return : a*b
+ * mul - multiply 2 int
+ * @a: first int
+ * @b: second int
+ * Return: addition of the multiplicattion
  */
+
 int mul(int a, int b)
 {
 	return (a * b);
