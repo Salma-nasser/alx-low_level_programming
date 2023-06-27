@@ -1,7 +1,11 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include <unistd.h>
 
 int _putchar(char c);
+=======
+
+>>>>>>> e631b3fa3711595ee0d6501ec938426f8dc29aca
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
