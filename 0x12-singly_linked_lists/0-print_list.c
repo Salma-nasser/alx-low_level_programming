@@ -12,11 +12,27 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (h->str != NULL)
-			printf("[%lu] %s\n", (sizeof(h->str) - 3), h->str);
+			printf("[%d] %s\n",_strlen(h->str), h->str);
 		else
 			printf("[0] (nil)\n");
 		i++;
 		h = h->next;
 	}
 	return (i);
+}
+/**
+ *_strlen - return the length of a string
+ *@s: input
+ *Return: int length of string
+ */
+int _strlen(char *s)
+{
+	int size = 0;
+
+	while (*s != '\0')
+	{
+		size++;
+		s++;
+	}
+	return (size);
 }
