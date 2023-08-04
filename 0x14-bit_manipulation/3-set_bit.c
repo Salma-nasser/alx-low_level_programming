@@ -3,6 +3,7 @@
  * set_bit - set a bit at index to 1
  * @n: string of 1 and 0s
  * @index: number to set at
+ * Return: 1 or -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
