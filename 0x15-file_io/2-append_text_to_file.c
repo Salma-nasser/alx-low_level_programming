@@ -11,19 +11,20 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	while (text_content[len] != '\0')
-		len++;
-	if (text_content == NULL)
+	fid = open(filename, O_WROLNY | O_APPEND);
+	if (fid == -1)
+		return (-1);
+	if (!text_content)
 	{
-		if (access(filename, F_OK) == 0)
-			return (1);
-		else
-			return (-1);
+		close(fid);
+		return (1);
 	}
-	fid = open(filename, O_WRONLY | O_APPEND);
+	while (text_content[len])
+		len++;
 	wr = write(fid, text_content, len);
 	if (wr == -1 || fid == -1)
 	{
+		close(fid);
 		return (-1);
 	}
 	close(fid);
