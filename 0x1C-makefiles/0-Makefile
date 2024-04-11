@@ -1,0 +1,8 @@
+# This is your first Makefile
+
+# Rule 'all' that builds your executable
+all:
+	gcc -o school main.c
+
+# .PHONY rule is used to avoid conflict with a file of the same name and makes sure the command associated with 'all' is executed even if a file named 'all' exists.
+.PHONY: all
